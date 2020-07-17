@@ -1,0 +1,12 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width">
+      <mat-label>Test Input</mat-label>
+      <input 
+        matInput 
+        placeholder="Test Input" 
+        name="dataRef" 
+        [(ngModel)]="dataRef" 
+        [value]="ref" 
+        (change)=newRefBtn()>
+    </mat-form-field>
+</form>

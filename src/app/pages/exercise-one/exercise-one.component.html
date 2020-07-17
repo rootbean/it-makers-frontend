@@ -1,0 +1,14 @@
+<div>
+    <h3>- {{title}}:</h3>
+
+    <figure>
+        <img src="../../../assets/exercise/ej1.png" alt="Trulli" style="width:100%">
+    </figure>
+
+    <h3>- Solución</h3>
+
+    <div>
+        <a (click)="showTextBtn()">{{messageBtn}}</a>
+        <p *ngIf="showText">{{this.message}}</p>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<div>
+    <h3>- {{title}}:</h3>
+
+    <figure>
+        <img src="../../../assets/exercise/ej2.png" alt="Trulli" style="width:100%">
+    </figure>
+
+    <h3>- Solución</h3>
+
+    <div>
+        <form class="example-form">
+            <mat-form-field class="example-full-width">
+              <mat-label>Elemento de entrada</mat-label>
+              <input matInput placeholder="Ref" name="refTestInput" [(ngModel)]="refTestInput">
+            </mat-form-field>
+            <mat-checkbox name="focusedBoolean" [(ngModel)]="focusedBoolean" >Focused!</mat-checkbox> 
+        </form>
+        <app-test-input [ref]="refTestInput" (newRef)="refTestInput = $event"></app-test-input>
+        <app-focusable-input [focused]="focusedBoolean"></app-focusable-input>
+    </div>
+
+</div>

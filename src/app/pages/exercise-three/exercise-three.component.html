@@ -1,0 +1,14 @@
+<div>
+    <h3>- {{title}}:</h3>
+
+    <figure>
+        <img src="../../../assets/exercise/ej3.png" alt="Trulli" style="width:100%">
+    </figure>
+
+    <h3>- Solución</h3>
+
+    <p> El item seleccionado es: {{itemSelectedDescription}} <span *ngIf="itemSelectedDescription">(Marcado como hecho)</span></p>
+
+    <app-todo-list [items]="itemsList" (onItemClick)=newItemSelected($event)></app-todo-list>
+
+</div>

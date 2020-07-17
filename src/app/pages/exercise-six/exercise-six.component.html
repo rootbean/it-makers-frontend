@@ -1,0 +1,35 @@
+<div>
+    <h3>- {{title}}:</h3>
+
+    <figure>
+        <img src="../../../assets/exercise/ej6.png" alt="Trulli" style="width:100%">
+    </figure>
+
+    <h3>- Solución</h3>
+
+    <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <mat-label>Tamaño X</mat-label>
+          <input 
+            type="number"
+            matInput 
+            placeholder="X" 
+            name="valueX" 
+            [(ngModel)]="valueX"  
+            (change)=changeXBtn()>
+        </mat-form-field>
+    </form>
+
+    <p *ngIf="messageError">
+        El valor debe ser mayor a cero.
+    </p>
+
+    <div *ngIf="!messageError">
+        <div  *ngFor="let item of acumulation">
+            <span>{{item}}</span>
+            
+        </div>
+    </div>
+    
+
+</div>
